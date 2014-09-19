@@ -1,4 +1,8 @@
 Inotex::Application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  # mount Mercury::Engine => '/'
+  mount OrdinaryCms::Engine => '/'
+  ActiveAdmin.routes(self)
   resources :pages, only: :show
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
