@@ -4,7 +4,7 @@
  *
  * Minimum jQuery requirements are 1.7
  *= require_self
- *= require jquery
+ *= require vendor/jquery.js
  * You can include the Rails jQuery ujs script here to get some nicer behaviors in modals, panels and lightviews when
  * using :remote => true within the contents rendered in them.
  * require jquery_ujs
@@ -13,7 +13,7 @@
  * require mercury/support/history
  *
  * Require Mercury Editor itself.
- *= require mercury/mercury
+ *= require /mercury/mercury
  *
  * Require any localizations you wish to support
  * Example: es.locale, or fr.locale -- regional dialects are in each language file so never en_US for instance.

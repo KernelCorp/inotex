@@ -793,7 +793,7 @@ header.active .top_head, header.active .top_head p, header.active .top_head ul.s
     height: 20px;
     left: 55px;
     bottom: -20px;
-    background: url('../../img/testimonial-arrow.html') center center no-repeat;
+    background: url('../../images/img/testimonial-arrow.html') center center no-repeat;
 }
 
 .testimonial-post p {
@@ -866,7 +866,7 @@ span.date-post {
     position: absolute;
     width: 34px;
     height: 24px;
-    background: url('../../img/quote-left.png') center center no-repeat;
+    background: url('../../images/quote-left.png') center center no-repeat;
     left: 90px;
     top: 10px;
 }
@@ -876,7 +876,7 @@ span.date-post {
     position: absolute;
     width: 34px;
     height: 24px;
-    background: url('../../img/quote-right.png') center center no-repeat;
+    background: url('../../images/quote-right.png') center center no-repeat;
     right: 90px;
     top: 10px;
 }
@@ -1501,7 +1501,7 @@ div.testimonial-arrow-down.tertiary {border-top-color: #FFF;}
     position:absolute;
     left:50%; /* centers the loading animation horizontally one the screen */
     top:50%; /* centers the loading animation vertically one the screen */
-    background-image:url(../../img/bx_loader.gif); /* path to your loading animation */
+    background-image:url(../../images/bx_loader.gif); /* path to your loading animation */
     background-repeat:no-repeat;
     background-position:center;
     margin:-100px 0 0 -100px; /* is width and height divided by two */
@@ -1850,19 +1850,19 @@ div.testimonial-arrow-down.tertiary {border-top-color: #FFF;}
 }
 
 #parallax{
-    background-image: url(../../img/section/01.jpg);
+    background-image: url(../../images/section/01.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative;
 }
 #parallax_2{
-    background-image: url(../../img/section/02.jpg);
+    background-image: url(../../images/section/02.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative;
 }
 #parallax_3{
-    background-image: url(../../img/section/03.jpg);
+    background-image: url(../../images/section/03.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100%;
@@ -2254,11 +2254,11 @@ div.testimonial-arrow-down.tertiary {border-top-color: #FFF;}
     text-indent:-5555em;
     line-height:100;
     overflow:hidden;
-    background: #e74c3c url(../../img/search-icon.png) no-repeat center 14px;
+    background: #e74c3c url(../../images/search-icon.png) no-repeat center 14px;
     border:0;
 }
 #site-searchform #searchsubmit:hover{
-    background: #383634 url(../../img/search-icon.png) no-repeat center 14px;
+    background: #383634 url(../../images/search-icon.png) no-repeat center 14px;
 }
 
 
@@ -2634,23 +2634,23 @@ ul.recent_posts_list, ul.popular_posts_list {
     height: 100px !important;
 }
 .title_page.bg_1 {
-    background-image: url("../../img/title_page/bgPage.jpg");
+    background-image: url("../../images/title_page/bgPage.jpg");
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-color: #ecf0f1
 }
 .title_page.bg_2 {
-    background-image: url("../../img/title_page/bgPage_2.jpg");
+    background-image: url("../../images/title_page/bgPage_2.jpg");
     background-attachment: scroll;
     background-repeat: no-repeat;
 }
 .title_page.bg_3 {
-    background-image: url("../../img/title_page/bgPage_3.jpg");
+    background-image: url("../../images/title_page/bgPage_3.jpg");
     background-attachment: scroll;
     background-repeat: no-repeat;
 }
 .title_page.bg_4 {
-    background-image: url("../../img/title_page/bgPage_4.jpg");
+    background-image: url("../../images/title_page/bgPage_4.jpg");
     background-attachment: scroll;
     background-repeat: no-repeat;
 }
@@ -2695,7 +2695,7 @@ ul.recent_posts_list, ul.popular_posts_list {
     color: #fff;
     padding: 0 10px 0 0;
     margin: 0 0 0 5px;
-    background: url(../../img/breadcrumbs.png) no-repeat 100% 65%;
+    background: url(../../images/breadcrumbs.png) no-repeat 100% 65%;
 }
 
 #breadcrumbs ul li:last-child a,
@@ -3832,22 +3832,22 @@ time {
     -o-transition: all 0.17s ease-in-out;
 }
 .shares li a:active { background-color: #ecf0f1; }
-.shares li a.twitter { background-image: url(../../img/icons/social/twitter.png); }
+.shares li a.twitter { background-image: url(../../images/icons/social/twitter.png); }
 .shares li a.twitter:hover { background-color:#9AE4E8 !important;border-color: #9AE4E8;}
 
-.shares li a.facebook { background-image: url(../../img/icons/social/facebook.png); }
+.shares li a.facebook { background-image: url(../../images/icons/social/facebook.png); }
 .shares li a.facebook:hover { background-color:#3B5998 !important;border-color: #3B5998;}
 
-.shares li a.gplus { background-image: url(../../img/icons/social/gplus.png); }
+.shares li a.gplus { background-image: url(../../images/icons/social/gplus.png); }
 .shares li a.gplus:hover { background-color:#d34836 !important;border-color: #d34836;}
 
-.shares li a.pinterest { background-image: url(../../img/icons/social/pinterest.png); }
+.shares li a.pinterest { background-image: url(../../images/icons/social/pinterest.png); }
 .shares li a.pinterest:hover {background-color:#C92228 !important;border-color: #C92228;}
 
-.shares li a.yahoo { background-image: url(../../img/icons/social/yahoo.png); }
+.shares li a.yahoo { background-image: url(../../images/icons/social/yahoo.png); }
 .shares li a.yahoo:hover { background-color:#d34836 !important;border-color: #d34836;}
 
-.shares li a.linkedin { background-image: url(../../img/icons/social/linkedin.png); }
+.shares li a.linkedin { background-image: url(../../images/icons/social/linkedin.png); }
 .shares li a.linkedin:hover { background-color:#007bb6 !important;border-color: #007bb6;}
 
 

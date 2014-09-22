@@ -170,7 +170,7 @@ button::-moz-focus-inner {
 	top: 20px;
 	padding-right: 6px;
 	width: 100%;
-	background-image: url(../../img/mfp-close.png);
+	background-image: url(../../images/mfp-close.png);
 	background-repeat: no-repeat;
 	background-position: 100% 50%;
 	text-indent: 9999;
@@ -217,13 +217,13 @@ button::-moz-focus-inner {
 }
 
 .mfp-arrow.mfp-arrow-left {
-	background-image: url(../../img/mfp-left.png);
+	background-image: url(../../images/mfp-left.png);
 	background-repeat: no-repeat;
 	background-position: 50%;
 }
 
 .mfp-arrow.mfp-arrow-right {
-	background-image: url(../../img/mfp-right.png);
+	background-image: url(../../images/mfp-right.png);
 	background-repeat: no-repeat;
 	background-position: 50%;
 	right: 0;

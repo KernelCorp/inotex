@@ -20,7 +20,7 @@ gem 'jquery-ui-rails', '~> 4.2.1'
 gem 'jcrop-rails-v2'
 gem 'compass-rails'
 gem 'turbolinks'
-gem 'vonagam_items', github: 'vonagam/items' # path: '../../vonagam/items' #
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'magnific-popup-rails', github: 'joshuajansen/magnific-popup-rails'
 gem 'tinymce-rails'
 gem 'semantic-ui-sass', '~> 0.16.1.0'
@@ -50,6 +50,8 @@ gem 'russian'
 gem 'activemerchant'
 
 gem 'rack-ssl-enforcer'
+
+gem 'font-awesome-rails'
 
 # models extensions
 gem 'mongoid-paperclip', require: 'mongoid_paperclip'

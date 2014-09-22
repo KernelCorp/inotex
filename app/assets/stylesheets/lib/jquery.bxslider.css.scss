@@ -45,7 +45,7 @@
 
 .bx-wrapper .bx-loading {
 	min-height: 50px;
-	background: url('../../img/bx_loader.gif') center center no-repeat #fff;
+	background: image_url('bx_loader.gif') center center no-repeat #fff;
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -94,7 +94,7 @@
 
 .bx-wrapper .bx-prev {
 	left: 0;
-	background: url('../../img/arrow_left.png') center center no-repeat;
+	background: image_url('arrow_left.png') center center no-repeat;
 	border: 2px solid #fff;
 	border-radius: 0;
 	-webkit-border-radius: 0;
@@ -108,7 +108,7 @@
 
 .bx-wrapper .bx-next {
 	right: 0;
-	background: url('../../img/arrow_right.png') center center no-repeat;
+	background: image_url('images/arrow_right.png') center center no-repeat;
 	border: 2px solid #fff;
 	border-radius: 0;
 	-webkit-border-radius: 0;
@@ -157,7 +157,7 @@
 	width: 10px;
 	height: 11px;
 	outline: 0;
-	background: url(img/controls.html) -86px -11px no-repeat;
+	background: asset_path('controls.html') -86px -11px no-repeat;
 	margin: 0 3px;
 }
 
@@ -172,7 +172,7 @@
 	width: 9px;
 	height: 11px;
 	outline: 0;
-	background: url(img/controls.html) -86px -44px no-repeat;
+	background: asset_path('controls.html') -86px -44px no-repeat;
 	margin: 0 3px;
 }
 

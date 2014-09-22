@@ -9,9 +9,16 @@
 //
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
-//
-//= require jquery
+
+
+//= require vendor/modernizr-2.6.2-respond-1.1.0.min.js
+//= require vendor/jquery.js
 //= require jquery_ujs
+//= require vendor/bootstrap.min.js
+//= require vendor/jquery.easing.1.3.js
+//= require lib/jquery.cookie.js
+//= require lib/styleswitch.js
+//= require plugin/jquery.themepunch.revolution.min.js
+//= require plugin/jquery.plugin.js
+//= require lib/main.js
 //= require turbolinks
-//= require main
-//= require_tree .
