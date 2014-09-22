@@ -20,5 +20,7 @@
 //= require lib/styleswitch.js
 //= require plugin/jquery.themepunch.revolution.min.js
 //= require plugin/jquery.plugin.js
+//= require plugin/jquery.validate.js
+//= require lib/jquery.gmap
 //= require lib/main.js
 //= require turbolinks
