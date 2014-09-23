@@ -36,13 +36,16 @@
 /*-------------------------------------------------*/
 /* =  Header
 /*-------------------------------------------------*/
+.header{
+  background: #e4aa42;
+}
 
 .hed.affix {
     margin-top: -40px;
     z-index: 101;
-    background: #fff;
+    background: #e4aa42;
     width: 100%;
-    border-bottom: 1px solid #eaeaea;
+//    border-bottom: 1px solid #eaeaea;
 }
 
 .navbar_brand {
@@ -1619,7 +1622,8 @@ div.testimonial-arrow-down.tertiary {border-top-color: #FFF;}
     line-height:2;
 }
 .intro_box h1 span{
-	color:#e74c3c;
+	color:#e4aa42;
+    margin-left: 10px;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
 }
@@ -1639,9 +1643,9 @@ div.testimonial-arrow-down.tertiary {border-top-color: #FFF;}
 /* =  SERVICE FEATURE
 /*-------------------------------------------------*/
 .services{margin-bottom:30px;cursor: pointer;}
-.services:hover .icon{border-color: #e74c3c;}
+.services:hover .icon{border-color: #e4aa42;}
 .services:hover .icon i{
-    color: #e74c3c;
+    color: #e4aa42;
     -webkit-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
@@ -1651,7 +1655,7 @@ div.testimonial-arrow-down.tertiary {border-top-color: #FFF;}
     -o-transition: all 0.3s ease;
 }
 .services:hover .serv_detail h3{
-    color: #e74c3c;
+    color: #e4aa42;
     transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -1735,9 +1739,9 @@ div.testimonial-arrow-down.tertiary {border-top-color: #FFF;}
     -ms-transform: rotateY(0);
     transform: rotateY(0);
 }
-.services_2:hover .icon{border-color: #e74c3c;}
+.services_2:hover .icon{border-color: #e4aa42;}
 .services_2:hover .icon i{
-    color: #e74c3c;
+    color: #e4aa42;
     -webkit-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
@@ -1747,7 +1751,7 @@ div.testimonial-arrow-down.tertiary {border-top-color: #FFF;}
     -o-transition: all 0.5s ease;
 }
 .services_2:hover .serv_detail h3{
-    color: #e74c3c;
+    color: #e4aa42;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.17s ease-in-out;
     -webkit-transition: all 0.17s ease-in-out;

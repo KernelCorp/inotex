@@ -37,12 +37,16 @@
 /* =  Header
 /*-------------------------------------------------*/
 
+.header {
+    background: #e4aa42;
+}
+
 .hed.affix {
     margin-top: -40px;
     z-index: 101;
-    background: #fff;
+    background: #e4aa42;
     width: 100%;
-    border-bottom: 1px solid #eaeaea;
+    /*border-bottom: 1px solid #eaeaea;*/
 }
 
 .navbar_brand {
