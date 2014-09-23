@@ -4,7 +4,6 @@
  *
  * Minimum jQuery requirements are 1.7
  *= require_self
- *= require vendor/jquery.js
  * You can include the Rails jQuery ujs script here to get some nicer behaviors in modals, panels and lightviews when
  * using :remote => true within the contents rendered in them.
  * require jquery_ujs
@@ -13,7 +12,7 @@
  * require mercury/support/history
  *
  * Require Mercury Editor itself.
- *= require /mercury/mercury
+ *= require mercury/mercury
  *
  * Require any localizations you wish to support
  * Example: es.locale, or fr.locale -- regional dialects are in each language file so never en_US for instance.
@@ -249,7 +248,7 @@ window.Mercury = {
 
         // ## Image Uploading
         //
-        // If you drag img from your desktop into regions that support it, it will be uploaded to the server and inserted
+        // If you drag images from your desktop into regions that support it, it will be uploaded to the server and inserted
         // into the region.  You can disable or enable this feature, the accepted mime-types, file size restrictions, and
         // other things related to uploading.
         //

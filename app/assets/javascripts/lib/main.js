@@ -2,7 +2,7 @@
 /*global $:true */
 
 var $ = jQuery.noConflict();
-new UISearch( document.getElementById( 'sb-search' ) );
+//new UISearch( document.getElementById( 'sb-search' ) );
 $(document).ready(function($) {
 
 	"use strict";
