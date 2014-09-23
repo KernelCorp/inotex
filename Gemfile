@@ -66,8 +66,6 @@ gem 'mailgun-ruby', '~>1.0.2', require: 'mailgun'
 gem 'cancancan', '~> 1.7'
 gem 'geocoder'
 gem 'whenever', :require => false
-gem 'delorean'
-gem 'mercury-rails'
 
 # various
 gem 'rest-client'
@@ -105,6 +103,7 @@ group :development do
 end
 
 gem 'ordinary_cms'
+gem 'mercury-rails',       github: 'jejacks0n/mercury'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
