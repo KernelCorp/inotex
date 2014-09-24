@@ -8,11 +8,6 @@
           li.t_mail
             p email@gmail.com
       .col-lg-6.col-md-6.col-sm-6
-        /#sb-search.sb-search
-        /  form
-        /    input#search.sb-search-input name="search" placeholder=("Enter your search term...") type="text" value=""
-        /      input.sb-search-submit type="submit" value=""
-        /        span.sb-icon-search
         ul.social_media
           li
             a.fa.fa-facebook data-placement="bottom" data-toggle="tooltip" href="#" title="Facebook"  Facebook
@@ -42,15 +37,10 @@ header.header
               li
                 a href="#"  Услуги
                 ul.dropdown
-                  li
-                    a href="about.html"  Инженерные системы
-                  li
-                    a href="services.html"  Информационная безопасность
-                  li
-                    a href="faq.html"  Создание web-проектов
-                  li
-                    a href="left_sidebar.html"  Инсталляция программного обеспечения
-                  li
-                    a href="right_sidebar.html"  Поддержка 1С
+                  - OrdinaryCms::Page.each do |page|
+
+                    li
+                      a href="/pages/#{page.slug}" = page.name
+
               li
                 a href="#"  Контакты

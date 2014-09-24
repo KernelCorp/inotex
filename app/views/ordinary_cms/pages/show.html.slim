@@ -2,23 +2,21 @@ section.title_page.bg_3
   .container
     .row
       .col-lg-12.col-md-12.col-sm-12
-        h2 Fullwidth Content
+        = @page.section('top_title').render
         nav#breadcrumbs
           ul
             li
               a href="index.html"  Home
             li
               a href="index.html"  Pages
-            li Fullwidth Content
+            li = @page.section('small_title').render
 section.content.fullwidth
   .container
     .row
       .col-lg-12.col-md-12.col-sm-12 data-effect="slide-bottom"
         .intro_box
-          h1
-            | Welcome to
-            span Coruscate
-          p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          = @page.section('title').render
+          p = @page.section('after_title').render
     .row
       .col-lg-12.col-md-12.col-sm-12.col-xs-12
         #about_slide.swipe data-effect="slide-bottom"
@@ -35,60 +33,9 @@ section.content.fullwidth
             .swipe-right onclick="mySwipe.next()"
               i.fa.fa-chevron-right
         .sub_content data-effect="slide-bottom"
-          h3 Sidebar right with custom sidebar
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          = @page.section('first_text').render
           blockquote.default
-            p
-              | Fusce lacinia tempor malesuada. Ut lacus sapien, placerat a ornare nec, elementum sit amet felis. Maecenas pretium lorem hendrerit eros sagittis fermentum. Donec in ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo ad gravida. Cras suscipit, quam vitae adipiscing faucibus, risus nibh laoreet odio, a porttitor metus eros ut enim. Morbi augue velit, tempus mattis sum dignissim nec, porta sed risus.
-          p Suscipit nesciunt unde laborum dignissimos numquam nulla cumque pariatur repudiandae soluta iusto harum quos blanditiis sint dolor porro incidunt commodi. Quam ab voluptatibus saepe aperiam adipisci! Culpa debitis neque inventore iusto quod sit reprehenderit nemo suscipit veniam consequatur aut ducimus sint necessitatibus quasi omnis veritatis laudantium officiis et tenetur repellendus odio laboriosam cupiditate aspernatur recusandae facilis molestias eius voluptatum.
-          .feature_tabs
-            ul.tabs-nav
-              li.active
-                a href="#tab4"  Our Mission
-              li
-                a href="#tab5"  Second
-              li
-                a href="#tab6"
-                  i.fa.fa-comments
-                  | Supports
-            .tabs-container
-              #tab4.tab-content
-                h4 Euismod tincidunt laoreet
-                p
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              #tab5.tab-content
-                h4 Consectetur adipisicing elit
-                p
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              #tab6.tab-content
-                h4 deserunt mollit anim
-                p
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          p Lorrem ipsum eveniet excepturi repellat sint ipsam libero doloremque eos voluptatibus magnam accusantium quibusdam quo numquam dignissimos laborum laboriosam nulla cumque est accusamus ad quis totam fugiat necessitatibus vitae modi debitis reiciendis fuga quaerat quisquam a laudantium consequatur odio veritatis rerum dicta perferendis vero asperiores perspiciatis sed harum. Ut sequi vero harum quam pariatur assumenda sunt minus! Error pariatur eveniet dignissimos? Pariatur odio ipsum maxime dolores minus aspernatur sunt provident inventore nam consequatur reiciendis delectus id magni voluptatum asperiores tempore.
-          .content_media_images
-            = image_tag "content/left_img.jpg", class: 'cmi_responsive', alt: ""
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eligendi quos tenetur odio assumenda doloremque non porro cumque suscipit dignissimos iste eveniet a vero quia consequatur! Ad natus in delectus rerum cum eaque dicta suscipit reiciendis debitis adipisci mollitia doloribus enim aliquam quisquam est illo pariatur! Voluptate reprehenderit dolorem aspernatur beatae id nesciunt deleniti adipisci quasi quae inventore assumenda quam blanditiis magnam reiciendis soluta velit pariatur esse perspiciatis ut obcaecati quis cupiditate a quisquam dolore ex quo at qui quibusdam deserunt odit?
-              p Iure saepe totam eius. Corporis atque veniam ab quaerat amet vero repellat libero autem laboriosam earum. Perspiciatis esse explicabo eaque itaque reiciendis deserunt! Tempora perferendis laudantium maxime odit provident similique numquam delectus cum doloremque ea blanditiis labore libero modi suscipit ipsum itaque eum dolores illum voluptates aut! Possimus quo tempora voluptates atque voluptatibus consectetur laborum. Voluptates dicta ea consequatur laboriosam earum nesciunt eveniet enim aperiam in ullam suscipit ab exercitationem nihil aspernatur totam facilis aliquam.
+            = @page.section('red_rect_text').render
+          = @page.section('second_text').render
 
 

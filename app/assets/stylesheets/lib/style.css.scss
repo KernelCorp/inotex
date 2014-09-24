@@ -926,6 +926,8 @@ blockquote.default > p {
     line-height: 20px;
 }
 
+blockquote.default > .section {z-index: 999; position: relative}
+
 /*-------------------------------------------------*/
 /* =  BLOCKQUOTE TESTIMONIALS
 /*-------------------------------------------------*/
