@@ -40,14 +40,11 @@ gem 'activeadmin-sortable'
 gem 'activeadmin_images'
 gem 'activeadmin_tinymce', '~>0.2.2'
 
-gem 'wkhtmltopdf-binary', '0.9.9.1'
-gem 'wicked_pdf'
 
 gem 'devise'
 
 gem 'rails-i18n', '~> 4.0.0'
 gem 'russian'
-gem 'activemerchant'
 
 gem 'rack-ssl-enforcer'
 
