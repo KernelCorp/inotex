@@ -1,5 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600);
+@import 'settings';
+@import 'settings-ie8';
+@import 'magnified';
+@import 'owl.carousel';
+@import 'jquery.bxslider';
+@import 'menus.css';
 
 *::-moz-selection {
     background: none repeat scroll 0 0 #e74c3c;
