@@ -11,7 +11,12 @@
 </head>
 <body>
 
-<%= yield %>
+<div id="preloader"><div id="status"></div></div>
+<div class="section wrapper">
+    <%= render partial: 'layouts/ordinary_cms/header'%>
+    <%= yield %>
+    <%= render partial: 'layouts/ordinary_cms/footer'%>
+</div>
 
 </body>
 </html>
