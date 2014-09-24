@@ -8,4 +8,5 @@
 
 AdminUser.create email: 'admin@example.com', password: 'password'
 
+OrdinaryCms::Page.create name: 'contacts'
 OrdinaryCms::Page.create name: 'root', root: true
