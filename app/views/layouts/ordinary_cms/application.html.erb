@@ -3,7 +3,6 @@
 <head>
   <title>Inotex</title>
   <%= javascript_include_tag "http://a.vimeocdn.com/js/froogaloop2.min.js", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "vendor/modernizr-2.6.2-respond-1.1.0.min.js", media: "all", "data-turbolinks-track" => true %>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 
 
@@ -17,6 +16,7 @@
     <%= yield %>
     <%= render partial: 'layouts/ordinary_cms/footer'%>
 </div>
+<%= javascript_include_tag   "application", media: "all", "data-turbolinks-track" => true %>
 
 </body>
 </html>
