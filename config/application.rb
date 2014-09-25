@@ -25,8 +25,8 @@ module Inotex
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     config.i18n.available_locales = [:ru, :en]
-    config.i18n.default_locale = locale
-    config.i18n.locale = locale
+    config.i18n.default_locale = :ru
+    config.i18n.locale = :ru
 
     config.time_zone = 'Moscow'
 
