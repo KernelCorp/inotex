@@ -13,13 +13,11 @@ OrdinaryCms::Page.create name: 'root', root: true
 
 text_page = OrdinaryCms::Factories::Page.create name: 'text_page'
 
-text_page.sections.build(name: 'title')
+
 text_page.sections.build(name: 'first_text')
 text_page.sections.build(name: 'red_rect_text')
 text_page.sections.build(name: 'second_text')
-text_page.sections.build(name: 'top_title')
 text_page.sections.build(name: 'after_title')
-text_page.sections.build(name: 'small_title')
 text_page.save
 text_page.build(name: 'Инженерные системы').save
 text_page.build(name: 'Информационная безопасноть').save

@@ -2,20 +2,20 @@ section.title_page.bg_3
   .container
     .row
       .col-lg-12.col-md-12.col-sm-12
-        = @page.section('top_title').render
+        h2 = @page.name
         nav#breadcrumbs
           ul
             li
-              a href="index.html"  Home
+              a href="/"  Home
             li
               a href="index.html"  Pages
-            li = @page.section('small_title').render
+            li = @page.name
 section.content.fullwidth
   .container
     .row
       .col-lg-12.col-md-12.col-sm-12 data-effect="slide-bottom"
         .intro_box
-          = @page.section('title').render
+          h1 = @page.name
           p = @page.section('after_title').render
     .row
       .col-lg-12.col-md-12.col-sm-12.col-xs-12
