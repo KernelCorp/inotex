@@ -1,12 +1,4 @@
 GIT
-  remote: git://github.com/jejacks0n/mercury.git
-  revision: 1cc637b0bccea19085f824d2881c6513ed5ee8ae
-  specs:
-    mercury-rails (0.9.0)
-      coffee-rails (>= 3.2.2)
-      railties (>= 3.0)
-
-GIT
   remote: git://github.com/elia/activeadmin-mongoid.git
   revision: 9b1858441acb1f118e07f04381ed107afee575c8
   branch: rails4
@@ -36,6 +28,14 @@ GIT
       sass-rails
 
 GIT
+  remote: git://github.com/jejacks0n/mercury.git
+  revision: 1cc637b0bccea19085f824d2881c6513ed5ee8ae
+  specs:
+    mercury-rails (0.9.0)
+      coffee-rails (>= 3.2.2)
+      railties (>= 3.0)
+
+GIT
   remote: git://github.com/joshuajansen/magnific-popup-rails.git
   revision: 03502062efff48c133fc348b611738ba85a5b5ba
   specs:
@@ -43,7 +43,7 @@ GIT
 
 GIT
   remote: git://github.com/max-konin/ordinary_cms.git
-  revision: bc576a75a8289366ebc5ece4477490db343600a1
+  revision: 9b3788e07a92eaa784aa4d00ec65f247afc30dd4
   specs:
     ordinary_cms (0.3.1)
       haml-rails
