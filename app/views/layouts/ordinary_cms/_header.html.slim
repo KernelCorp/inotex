@@ -27,7 +27,7 @@ header.header
       .row
         .col-lg-3.col-md-3.col-sm-12
           .navbar_brand
-            a href="index.html"
+            a href="/"
               = image_tag "logo.png", alt: ''
         .col-lg-9.col-md-9.col-sm-12
           #nav
@@ -37,8 +37,7 @@ header.header
               li
                 a href="#"  Услуги
                 ul.dropdown
-                  - OrdinaryCms::Page.each do |page|
-
+                  - OrdinaryCms::Factories::Page.where(name: 'text_page').first.pages.each do |page|
                     li
                       a href="/pages/#{page.slug}" = page.name
 
