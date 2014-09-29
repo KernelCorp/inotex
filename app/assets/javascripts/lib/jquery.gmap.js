@@ -17,8 +17,8 @@ window.onload = loadScript;
  * define the coordinates of your company
  */
 
-lat = 1.28870;
-lng = 103.82678; 
+lat = 54.851424;
+lng = 83.102946;
 
 var map;
 var MY_MAPTYPE_ID = 'custom_style';
@@ -73,7 +73,7 @@ function initialize() {
   
   var myLatlng = new google.maps.LatLng(lat,lng);
   var mapOptions = {
-    zoom: 12,
+    zoom: 16,
     scrollwheel: false,
     mapTypeControl:false,
     streetViewControl:false,
