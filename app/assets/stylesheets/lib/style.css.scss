@@ -39,6 +39,16 @@
   background: #e4aa42;
 }
 
+@media (max-width: 970px) {
+  .header {
+    .mainMenu {
+      li:nth-child(2){
+        padding-right: 300px !important;
+      }
+    }
+  }
+}
+
 .hed.affix {
     margin-top: -40px;
     z-index: 101;
