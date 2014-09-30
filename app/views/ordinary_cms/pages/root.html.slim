@@ -5,13 +5,17 @@ section.slider
         li data-masterspeed="300" data-slotamount="10" data-transition="fade"
           = image_tag "revslider/transparent.png", alt: "slidebg3", 'data-bgfit'=>"cover", 'data-bgposition'=>"left top" , 'data-bgrepeat' => "no-repeat", 'data-lazyload'=>image_path("revslider/bg_10.jpg")
           .tp-caption.largemed_text_def.sfb data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="600" data-start="1000" data-x="20" data-y="110"
-            | Бизнес и наука
+            = @page.section('carousel_1_1').render
+            // Бизнес и наука
           .tp-caption.small_text_def.sft.stt data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="500" data-start="1400" data-x="20" data-y="165"
-            | Компания работает в тесном контакте с ИВМ и МГ СО РАН.
+            = @page.section('carousel_1_2').render
+            // Компания работает в тесном контакте с ИВМ и МГ СО РАН.
           .tp-caption.small_text_def.sft.stt data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="500" data-start="1500" data-x="20" data-y="190"
-            |  В силу этих обстоятельств наш коллектив принимает активное участие
+            = @page.section('carousel_1_3').render
+            //  В силу этих обстоятельств наш коллектив принимает активное участие
           .tp-caption.small_text_def.sft.stt data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="500" data-start="1600" data-x="20" data-y="215"
-            | в научно - технических разработках в сфере специализированного программного обеспечения.
+            = @page.section('carousel_1_4').render
+            // в научно - технических разработках в сфере специализированного программного обеспечения.
           /.tp-caption.sfb data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="600" data-start="2400" data-x="730" data-y="50"
           /  = image_tag "revslider/businessman_3.png", alt: "slider"
         li data-masterspeed="300" data-slotamount="15" data-transition="fade"
@@ -23,15 +27,20 @@ section.slider
           /.tp-caption.randomrotate data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="600" data-start="1600" data-x="430" data-y="210"
           /  = image_tag "revslider/iphone.png", alt: "Image 1"
           .tp-caption.modern_big_blackbg.randomrotate.sfr data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="600" data-start="900" data-x="630" data-y="95"
-            | Современный бизнес
+            = @page.section('carousel_2_1').render
+            // Современный бизнес
           .tp-caption.modern_big_mainbg.randomrotate.sfr data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="600" data-start="1100" data-x="630" data-y="140"
-            | технологии и коммуникации
+            = @page.section('carousel_2_2').render
+            // технологии и коммуникации
           .tp-caption.medium_text_def.sfr data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="600" data-start="1400" data-x="630" data-y="205"
-            | время диктует претворения в жизнь
+            = @page.section('carousel_2_3').render
+            // время диктует претворения в жизнь
           .tp-caption.medium_text_def.sfr data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="600" data-start="1700" data-x="630" data-y="230"
-            | эффективных решений для успешного ведения бизнеса
+            = @page.section('carousel_2_4').render
+            // эффективных решений для успешного ведения бизнеса
           .tp-caption.medium_text_def.sfr data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="600" data-start="2000" data-x="630" data-y="255"
-            | в различных областях человеческой деятельности.
+            = @page.section('carousel_2_5').render
+            // в различных областях человеческой деятельности.
           /.tp-caption.medium_text_def.sfr data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="600" data-start="2300" data-x="630" data-y="280"
           /  | duis aute irure dolor in reprehenderit in voluptate.
         /li data-masterspeed="300" data-slotamount="1" data-transition="turnoff"
@@ -66,15 +75,18 @@ section.content.intro_text_box
           h1
             | компания
             span Инотех
-          p Важнейшей целью компании является помощь в организации информационной инфраструктуры бизнеса для компаний малого и среднего бизнеса.
+          = @page.section('inotex_company').render
+          //p Важнейшей целью компании является помощь в организации информационной инфраструктуры бизнеса для компаний малого и среднего бизнеса.
     .row
       .col-lg-4.col-md-4.col-sm-4 data-effect="slide-left"
         .services_2
           .icon
             i.fa.fa-laptop
           .serv_detail
-            h3 Системы коммуникаций
-            p Мы прекрасно осознаем, что время диктует претворения в жизнь эффективных решений для успешного ведения бизнеса в различных областях человеческой деятельности.
+            //h3 Системы коммуникаций
+            h3 = @page.section('communications_systems').render(:alias)
+            = @page.section('communications_systems').render
+            //p Мы прекрасно осознаем, что время диктует претворения в жизнь эффективных решений для успешного ведения бизнеса в различных областях человеческой деятельности.
               И те компании стремящиеся занять лидирующие положение на рынке понимают, что вовремя полученная информация о происходящем вокруг, надёжно обеспечит дальнейшее развитие компании в своей области деятельности.
               Одним из эффективных и проверенных решений в этом является коммуникационная платформа “OK Tel” являющаяся по сути “ушами” компании, а комплексные системы безопасности предприятия “глазами”
       .col-lg-4.col-md-4.col-sm-4 data-effect="slide-bottom"
@@ -82,30 +94,32 @@ section.content.intro_text_box
           .icon
             i.fa.fa-trophy
           .serv_detail
-            h3 Системы контроля доступа
-            p Без обеспечения внутреннего контроля и дисциплины на предприятии невозможно эффективно управлять любым подразделением компании, а это значит упущенная выгода в будущем, наша компания предлагает системы доступа и учёта рабочего времени на предприятиях любого уровня.
+            h3 = @page.section('access_control').render(:alias)
+            = @page.section('access_control').render
+            /h3 Системы контроля доступа
+            /p Без обеспечения внутреннего контроля и дисциплины на предприятии невозможно эффективно управлять любым подразделением компании, а это значит упущенная выгода в будущем, наша компания предлагает системы доступа и учёта рабочего времени на предприятиях любого уровня.
       .col-lg-4.col-md-4.col-sm-4 data-effect="slide-right"
         .services_2
           .icon
             i.fa.fa-cogs
           .serv_detail
-            h3 Web-интеграция
-            p Мы считаем, что организация, не имеющая своего Интернет представительства является ущербной в информационном плане, а значит не имеющая перспектив дальнейшего развития в информационной бизнес среде.
-              Наши специалисты имеют огромный опыт создания web – сайтов любого уровня сложности, различной направленности.
-              Мы так же поможем обрести лицо компании не только в сети Интернет, но и создать неповторимый фирменный стиль Вашей компании! А размещение рекламной информации на популярных WEB – сайтах города Новосибирска поможет Вам продвинуть свои товары и услуги на рынки города, найдите свою аудиторию!
+            h3 = @page.section('web-integration').render(:alias)
+            = @page.section('web-integration').render
+            /h3 Web-интеграция
+            /p Мы считаем, что организация, не имеющая своего Интернет представительства является ущербной в информационном плане, а значит не имеющая перспектив дальнейшего развития в информационной бизнес среде. Наши специалисты имеют огромный опыт создания web – сайтов любого уровня сложности, различной направленности. Мы так же поможем обрести лицо компании не только в сети Интернет, но и создать неповторимый фирменный стиль Вашей компании! А размещение рекламной информации на популярных WEB – сайтах города Новосибирска поможет Вам продвинуть свои товары и услуги на рынки города, найдите свою аудиторию!
 section.content.feature_extra.bg_grey
   .container
     .row
       .col-lg-12.col-md-12.col-sm-12 data-effect="slide-top"
         .title
-          h2 Наши услуги
-          p Наши специалисты имеют огромный опыт создания web – сайтов любого уровня сложности, различной направленности.
+          h2 = @page.section('our_service').render(:alias)
+          = @page.section('our_service').render
+          /h2 Наши услуги
+          /p Наши специалисты имеют огромный опыт создания web – сайтов любого уровня сложности, различной направленности.
       .col-lg-6.col-md-6.col-sm-6 data-effect="slide-left"
-        p
-          | Компания "Инотех" основана в 2005 году путём реорганизации ряда предприятий. В коллектив компании вошли специалисты в различных областях деятельности, имеющие за плечами большой опыт работы, в сфере информационных систем, разработке web – сайтов, полиграфическом дизайне, издательской деятельности.
-            Важнейшей целью компании является помощь в организации информационной инфраструктуры бизнеса для компаний малого и среднего бизнеса.
-            Мы прекрасно осознаем, что время диктует претворения в жизнь эффективных решений для успешного ведения бизнеса в различных областях человеческой деятельности.
-            И те компании стремящиеся занять лидирующие положение на рынке понимают, что вовремя полученная информация о происходящем вокруг, надёжно обеспечит дальнейшее развитие компании в своей области деятельности.
+        = @page.section('our_service_left').render
+        /p
+        /  | Компания "Инотех" основана в 2005 году путём реорганизации ряда предприятий. В коллектив компании вошли специалисты в различных областях деятельности, имеющие за плечами большой опыт работы, в сфере информационных систем, разработке web – сайтов, полиграфическом дизайне, издательской деятельности. Важнейшей целью компании является помощь в организации информационной инфраструктуры бизнеса для компаний малого и среднего бизнеса. Мы прекрасно осознаем, что время диктует претворения в жизнь эффективных решений для успешного ведения бизнеса в различных областях человеческой деятельности. И те компании стремящиеся занять лидирующие положение на рынке понимают, что вовремя полученная информация о происходящем вокруг, надёжно обеспечит дальнейшее развитие компании в своей области деятельности.
       .col-lg-6.col-md-6.col-sm-6 data-effect="slide-right"
         ul.list_style.circle
           li
@@ -138,8 +152,10 @@ section.content.feature_client
     .row
       .col-lg-12.col-md-12.col-sm-12 data-effect="slide-top"
         .title
-          h2 Наши клиенты
-          p Мы заинтересованы в деловом сотрудничестве со всеми организациями, работающими в сфере информационных систем, полиграфического дизайна, издательского дела, PR и готовы принять участие в совместных проектах.
+          h2 = @page.section('our_clients').render(:alias)
+          = @page.section('our_clients').render
+          /h2 Наши клиенты
+          /p Мы заинтересованы в деловом сотрудничестве со всеми организациями, работающими в сфере информационных систем, полиграфического дизайна, издательского дела, PR и готовы принять участие в совместных проектах.
       .col-lg-12.col-md-12.col-sm-12 data-effect="slide-bottom"
 
         .owl-carousel.carousel2.pb_20.client

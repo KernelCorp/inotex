@@ -43,7 +43,7 @@ GIT
 
 GIT
   remote: git://github.com/max-konin/ordinary_cms.git
-  revision: f8e43fa14c1b704269a82b7cda28a4fe80a2d1e0
+  revision: 52e4e6825db7099988e8cfc07c00755024c32e71
   specs:
     ordinary_cms (0.4.0)
       haml-rails
