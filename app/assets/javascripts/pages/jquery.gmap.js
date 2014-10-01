@@ -17,12 +17,12 @@ window.onload = loadScript;
  * define the coordinates of your company
  */
 
-lat = 54.851424;
-lng = 83.102946;
+lat = 1.28870;
+lng = 103.82678;
 
 var map;
 var MY_MAPTYPE_ID = 'custom_style';
- 
+
 function initialize() {
 
 	  var featureOpts = [
@@ -70,10 +70,10 @@ function initialize() {
 				]
 			  }
 			];
-  
+
   var myLatlng = new google.maps.LatLng(lat,lng);
   var mapOptions = {
-    zoom: 16,
+    zoom: 12,
     scrollwheel: false,
     mapTypeControl:false,
     streetViewControl:false,
@@ -83,7 +83,7 @@ function initialize() {
       },
       mapTypeId: MY_MAPTYPE_ID
   };
-  
+
   var map = new google.maps.Map(document.getElementById('jogjamap'), mapOptions);
 
   var marker = new google.maps.Marker({
@@ -91,12 +91,12 @@ function initialize() {
   	icon: "img/marker.png",
       map: map
   });
-  
+
   var styledMapOptions = {
 		    name: 'Custom Style'
 		  };
-  
-	var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions); 
+
+	var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
 	map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
 	google.maps.event.addDomListener(window, 'load', initialize);
 }

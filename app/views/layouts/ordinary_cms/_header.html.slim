@@ -26,12 +26,12 @@ header.header
         .col-lg-9.col-md-9.col-sm-12
           #nav
             ul#mainMenu.mainMenu.default
-              li class="#{'active' if @page.slug == 'root'}" style=('padding-left: 532px;')
+              li class="#{'active' if @page.slug == 'root'}" style=('padding-left: 520px;')
                 a href="/"  На главную
               li class="#{'active' if (@page.slug != 'root') && (@page.slug != 'contacts') }"
                 a href="#"  Услуги
                 ul.dropdown
-                  - OrdinaryCms::Factories::Page.where(name: 'text_page').first.pages.each do |page|
+                  - get_pages.each do |page|
                     li
                       a href="/pages/#{page.slug}" = page.name
 

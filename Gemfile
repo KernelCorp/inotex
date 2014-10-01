@@ -99,7 +99,8 @@ group :development do
   gem 'net-ssh', '~> 2.7.0'
 end
 
-gem 'ordinary_cms', '~> 0.4.0'
+
+gem 'ordinary_cms', github: 'max-konin/ordinary_cms'
 gem 'mercury-rails',       github: 'jejacks0n/mercury'
 
 # Use ActiveModel has_secure_password
