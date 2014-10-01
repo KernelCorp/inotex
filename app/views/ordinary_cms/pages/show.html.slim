@@ -19,19 +19,19 @@ section.content.fullwidth
           p = @page.section('after_title').render
     .row
       .col-lg-12.col-md-12.col-sm-12.col-xs-12
-        #about_slide.swipe data-effect="slide-bottom"
-          ul.swipe-wrap
-            li
-              = image_tag "content/slide_1.jpg", class: 'max-450', alt: ""
-            li
-              = image_tag "content/slide_2.jpg", class: 'max-450', alt: ""
-            li
-              = image_tag "content/slide_3.jpg", class: 'max-450', alt: ""
-          .swipe-navi
-            .swipe-left onclick="mySwipe.prev()"
-              i.fa.fa-chevron-left
-            .swipe-right onclick="mySwipe.next()"
-              i.fa.fa-chevron-right
+        /#about_slide.swipe data-effect="slide-bottom"
+        /  ul.swipe-wrap
+        /    li
+        /      = image_tag "content/slide_1.jpg", class: 'max-450', alt: ""
+        /    li
+        /      = image_tag "content/slide_2.jpg", class: 'max-450', alt: ""
+        /    li
+        /      = image_tag "content/slide_3.jpg", class: 'max-450', alt: ""
+        /  .swipe-navi
+        /    .swipe-left onclick="mySwipe.prev()"
+        /      i.fa.fa-chevron-left
+        /    .swipe-right onclick="mySwipe.next()"
+        /      i.fa.fa-chevron-right
         .sub_content data-effect="slide-bottom"
           = @page.section('first_text').render
           blockquote.default
