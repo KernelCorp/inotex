@@ -9,7 +9,7 @@ $(document).ready(function($) {
 		var api = jQuery('.fullwidthbanner').revolution({
 			delay:9000,
 			startwidth:1170,
-			startheight:410,
+			startheight:340,
 			onHoverStop:"off",						// Stop Banner Timet at Hover on Slide on/off
 			thumbWidth:20,							// Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
 			thumbHeight:20,

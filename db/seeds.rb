@@ -8,8 +8,10 @@
 
 AdminUser.create email: 'admin@example.com', password: 'password'
 
-OrdinaryCms::Page.create name: 'contacts'
-OrdinaryCms::Page.create name: 'root', root: true
+contacts = OrdinaryCms::Page.find_or_create_by name: 'contacts'
+root = OrdinaryCms::Page.find_or_create_by name: 'root'
+root.update_attribute :root, true
+
 
 text_page = OrdinaryCms::Factories::Page.create name: 'text_page'
 
@@ -24,3 +26,29 @@ text_page.build(name: 'Информационная безопасноть').sav
 text_page.build(name: 'Создание web-проектов').save
 text_page.build(name: 'Инсталляция программного обеспеченния').save
 text_page.build(name: 'Поддержка 1С').save
+
+
+root.sections.build(name: 'carousel_1_1')
+root.sections.build(name: 'carousel_1_2')
+root.sections.build(name: 'carousel_1_3')
+root.sections.build(name: 'carousel_1_4')
+root.sections.build(name: 'carousel_2_1')
+root.sections.build(name: 'carousel_2_2')
+root.sections.build(name: 'carousel_2_3')
+root.sections.build(name: 'carousel_2_4')
+root.sections.build(name: 'carousel_2_5')
+root.sections.build(name: 'inotex_company')
+root.sections.build(name: 'communications_systems')
+root.sections.build(name: 'access_control')
+root.sections.build(name: 'web-integration')
+root.sections.build(name: 'our_service')
+root.sections.build(name: 'our_service_left')
+root.sections.build(name: 'our_clients')
+root.save
+
+contacts.sections.build(name: 'info')
+contacts.sections.build(name: 'address')
+contacts.sections.build(name: 'phone')
+contacts.sections.build(name: 'email')
+contacts.sections.build(name: 'web')
+contacts.save

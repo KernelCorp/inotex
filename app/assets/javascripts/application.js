@@ -23,3 +23,4 @@
 //= require plugin/jquery.validate.js
 //= require lib/jquery.gmap
 //= require lib/main.js
+
