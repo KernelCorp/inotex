@@ -3121,6 +3121,12 @@ footer p{color: #eee !important;}
     }
   }
 }
+
+@media (max-width: 770px) {
+  #kerweb{
+    text-align: center;
+  }
+}
 .wfoot_content .recent_posts, .wfoot_content .tweet_go, .wfoot_content .flickr{
     margin-top: 25px;
 }
