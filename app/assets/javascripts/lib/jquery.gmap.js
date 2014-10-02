@@ -18,7 +18,7 @@ window.onload = loadScript;
  */
 
 lat = 54.851424;
-lng = 83.102946;
+lng = 83.10288;
 
 var map;
 var MY_MAPTYPE_ID = 'custom_style';
@@ -88,10 +88,9 @@ function initialize() {
 
   var marker = new google.maps.Marker({
       position: myLatlng,
-  	icon: "img/marker.png",
       map: map
   });
-  
+
   var styledMapOptions = {
 		    name: 'Custom Style'
 		  };
@@ -99,6 +98,8 @@ function initialize() {
 	var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions); 
 	map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
 	google.maps.event.addDomListener(window, 'load', initialize);
+
+    marker.setMap(map);
 }
 
 
