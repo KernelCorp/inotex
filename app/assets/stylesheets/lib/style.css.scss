@@ -2743,9 +2743,13 @@ ul.recent_posts_list, ul.popular_posts_list {
     background-repeat: no-repeat;
 }
 .title_page.bg_3 {
-    background-image: image_url("title_page/bgPage_3.jpg");
-    background-attachment: scroll;
-    background-repeat: no-repeat;
+  background-color: #010103;
+}
+
+.bg_container.bg_3 {
+  background-image: image_url("title_page/bgPage_3.jpg");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
 }
 .title_page.bg_4 {
     background-image: image_url("title_page/bgPage_4.jpg");
