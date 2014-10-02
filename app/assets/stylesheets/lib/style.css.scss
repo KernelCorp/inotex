@@ -3109,6 +3109,18 @@ footer p{color: #eee !important;}
     margin: 0 auto 0;
     color: #ffffff;
 }
+.footer_bottom {
+  #kerweb {
+    font-size: 13px;
+    color: #fff;
+    a {
+      color: #fff;
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
+  }
+}
 .wfoot_content .recent_posts, .wfoot_content .tweet_go, .wfoot_content .flickr{
     margin-top: 25px;
 }
