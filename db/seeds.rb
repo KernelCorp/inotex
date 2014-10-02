@@ -28,6 +28,13 @@ text_page.build(name: 'Инсталляция программного обес�
 text_page.build(name: 'Поддержка 1С').save
 
 
+root.sections.build(name: 'carousel_3_1')
+root.sections.build(name: 'carousel_3_2')
+root.sections.build(name: 'carousel_3_3')
+root.sections.build(name: 'carousel_3_4')
+root.save
+
+
 root.sections.build(name: 'carousel_1_1')
 root.sections.build(name: 'carousel_1_2')
 root.sections.build(name: 'carousel_1_3')
@@ -37,6 +44,7 @@ root.sections.build(name: 'carousel_2_2')
 root.sections.build(name: 'carousel_2_3')
 root.sections.build(name: 'carousel_2_4')
 root.sections.build(name: 'carousel_2_5')
+
 root.sections.build(name: 'inotex_company')
 root.sections.build(name: 'communications_systems')
 root.sections.build(name: 'access_control')
@@ -45,6 +53,7 @@ root.sections.build(name: 'our_service')
 root.sections.build(name: 'our_service_left')
 root.sections.build(name: 'our_clients')
 root.save
+
 
 contacts.sections.build(name: 'info')
 contacts.sections.build(name: 'address')

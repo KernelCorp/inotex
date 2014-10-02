@@ -43,18 +43,16 @@ section.slider
             // в различных областях человеческой деятельности.
           /.tp-caption.medium_text_def.sfr data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="600" data-start="2300" data-x="630" data-y="280"
           /  | duis aute irure dolor in reprehenderit in voluptate.
-        /li data-masterspeed="300" data-slotamount="1" data-transition="turnoff"
-        /  = image_tag "revslider/transparent.png", alt: "slidebg3", 'data-bgfit'=>"cover", 'data-bgposition'=>"left top", 'data-bgrepeat'=>"no-repeat", 'data-lazyload'=>image_path("revslider/bg_8.jpg")
-        /  .tp-caption.tp-resizeme.sfb data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="600" data-start="1200" data-x="580" data-y="80"
-        /    iframe allowfullscreen="" height="310" src="http://player.vimeo.com/video/82845229?title=0&amp;byline=0&amp;portrait=0" width="550"
-        /  .caption.modern_big_blackbg.sfr.stt data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="500" data-start="1200" data-x="188" data-y="80"
-        /    | Extensive Video Support
-        /  .caption.modern_big_mainbg.sfr.stt data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="500" data-start="1600" data-x="365" data-y="140"
-        /    | Youtube
-        /  .caption.modern_big_mainbg.sfr.stt data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="500" data-start="2000" data-x="388" data-y="200"
-        /    | Vimeo
-        /  .caption.modern_big_mainbg.sfr.stt data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="500" data-start="2600" data-x="240" data-y="260"
-        /    | Self-Hosted HTML 5
+        li data-masterspeed="300" data-slotamount="1" data-transition="fade"
+          = image_tag "revslider/transparent.png", alt: "slidebg3", 'data-bgfit'=>"cover", 'data-bgposition'=>"left top", 'data-bgrepeat'=>"no-repeat", 'data-lazyload'=>image_path("revslider/earth.jpg")
+          .caption.modern_big_blackbg.sfr.stt data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="500" data-start="500" data-x="188" data-y="80"
+            = @page.section('carousel_3_1').render
+          .caption.small_text_def.sfr.stt data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="500" data-start="1200" data-x="200" data-y="130"
+            = @page.section('carousel_3_2').render
+          .caption.small_text_def.sfr.stt data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="1000" data-start="1400" data-x="200" data-y="150"
+            = @page.section('carousel_3_3').render
+          .caption.small_text_def.sfr.stt data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="1000" data-start="1600" data-x="200" data-y="170"
+            = @page.section('carousel_3_4').render
         /  .caption.modern_big_blackbg.sfr.stt data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="500" data-start="3000" data-x="205" data-y="320"
         /    | Great Responsive Look
         /  .caption.randomrotate data-easing="easeOutExpo" data-endeasing="easeInSine" data-endspeed="300" data-speed="600" data-start="1000" data-x="480" data-y="80"
