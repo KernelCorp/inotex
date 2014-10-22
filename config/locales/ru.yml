@@ -1,0 +1,15 @@
+ru:
+  mongoid: &mongoid
+    models:
+      client:
+        one: Партнер
+        few: Партнера
+        many: Партнеров
+        other: Партнеры
+    attributes:
+      client:
+        image: Картинка
+        link: Ссылка
+
+
+  activerecord: *mongoid

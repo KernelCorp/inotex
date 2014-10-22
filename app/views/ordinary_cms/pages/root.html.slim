@@ -157,27 +157,6 @@ section.content.feature_client
       .col-lg-12.col-md-12.col-sm-12 data-effect="slide-bottom"
 
         .owl-carousel.carousel2.pb_20.client
-          .item
-            = image_tag "clients/1.png", alt: ""
-          .item
-            = image_tag "clients/2.png", alt: ""
-          .item
-            = image_tag "clients/3.png", alt: ""
-          .item
-            = image_tag "clients/4.png", alt: ""
-          .item
-            = image_tag "clients/5.png", alt: ""
-          .item
-            = image_tag "clients/3.png", alt: ""
-          .item
-            = image_tag "clients/1.png", alt: ""
-          .item
-            = image_tag "clients/2.png", alt: ""
-          .item
-            = image_tag "clients/3.png", alt: ""
-          .item
-            = image_tag "clients/4.png", alt: ""
-          .item
-            = image_tag "clients/5.png", alt: ""
-          .item
-            = image_tag "clients/3.png", alt: ""
+          - Client.each do |client|
+            a.item href=client.link
+              = image_tag client.image.url(:medium)
