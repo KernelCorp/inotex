@@ -35,5 +35,8 @@ header.header
                     li
                       a href="/pages/#{page.slug}" = page.name
 
+              li class="#{'active' if @page.slug == 'oborudovaniie'}"
+                a href="/pages/oborudovaniie"  Оборудование
+
               li class="#{'active' if @page.slug == 'contacts'}"
                 a href="/pages/contacts"  Контакты

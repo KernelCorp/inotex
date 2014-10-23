@@ -7,6 +7,19 @@
 @import 'jquery.bxslider';
 @import 'menus';
 
+
+.section{
+  table{
+    align-content: center;
+    width: 100%;
+
+    td{
+      border: 1px solid #e4aa42;
+    }
+  }
+}
+
+
 *::-moz-selection {
     background: none repeat scroll 0 0 #e4aa42;
     color: #FFFFFF;
