@@ -100,7 +100,7 @@ group :development do
 end
 
 
-gem 'ordinary_cms', github: 'max-konin/ordinary_cms'
+gem 'ordinary_cms', '~> 0.4.1'
 gem 'mercury-rails',       github: 'jejacks0n/mercury'
 
 # Use ActiveModel has_secure_password

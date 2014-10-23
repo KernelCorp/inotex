@@ -17,7 +17,6 @@ section.content.fullwidth
       .col-lg-12.col-md-12.col-sm-12 data-effect="slide-bottom"
         .intro_box
           h1 = @page.name
-          p = @page.section('after_title').render
     .row
       .col-lg-12.col-md-12.col-sm-12.col-xs-12
         /#about_slide.swipe data-effect="slide-bottom"
@@ -34,9 +33,10 @@ section.content.fullwidth
         /    .swipe-right onclick="mySwipe.next()"
         /      i.fa.fa-chevron-right
         .sub_content data-effect="slide-bottom"
-          = @page.section('first_text').render
-          blockquote.default
-            = @page.section('red_rect_text').render
-          = @page.section('second_text').render
+          - @page.sections.each do |section|
+            h2
+              = section.render :alias
+            = section.render
+
 
 
