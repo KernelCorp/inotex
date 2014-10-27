@@ -33,7 +33,10 @@ section.content.fullwidth
         /    .swipe-right onclick="mySwipe.next()"
         /      i.fa.fa-chevron-right
         .sub_content data-effect="slide-bottom"
-          - @page.sections.each do |section|
+          - body = @page.sections.where(name: 'body').first
+          - if body.present?
+            = body.render
+          - @page.sections.where(:name.ne => 'body').each do |section|
             h2
               = section.render :alias
             = section.render
